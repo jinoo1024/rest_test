@@ -1,0 +1,633 @@
+3843 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 5564 (D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test\target\classes started by 83599 in D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test)
+3853 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+3855 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
+4015 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
+4017 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
+4019 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
+6921 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+6957 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+6958 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+6959 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+7252 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+7253 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3228 ms
+7841 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+8147 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.l.p.r.r.c.TestController:
+	{GET [/test/{id}]}: getTestInfo(String)
+8154 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ [/error]}: error(HttpServletRequest)
+8200 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+8231 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+8452 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+8466 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+8468 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+8475 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+8476 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+8486 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+8487 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+8498 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+8578 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2570 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 18888 (D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test\target\classes started by 83599 in D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test)
+2591 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+2592 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
+2712 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
+2713 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
+2714 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
+5315 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+5348 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+5349 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+5350 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+5628 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+5630 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2912 ms
+6240 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+6530 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.l.p.r.r.c.TestController:
+	{GET [/test/{id}]}: getTestInfo(String)
+6538 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+6589 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+6624 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+6824 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+6839 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+6841 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+6847 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+6848 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+6858 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+6859 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+6871 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+6934 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2246 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 19664 (D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test\target\classes started by 83599 in D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test)
+2254 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+2265 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
+2455 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
+2456 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
+2456 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
+5297 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+5334 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+5336 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+5336 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+5570 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+5572 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3112 ms
+6172 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+6561 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.l.p.r.r.c.TestController:
+	{GET [/test/{id}]}: getTestInfo(String)
+6567 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+6614 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+6652 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+6954 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+7003 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+7028 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 6.558 seconds (JVM running for 8.931)
+24010 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24011 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+24013 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+612522 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+612753 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2275 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 6308 (D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test\target\classes started by 83599 in D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test)
+2302 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+2303 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
+2461 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
+2463 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
+2464 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
+4965 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+5002 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+5003 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+5004 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+5214 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+5215 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2746 ms
+5790 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+6057 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.l.p.r.r.c.TestController:
+	{GET [/test/{id}]}: getTestInfo(String)
+6063 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+6101 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+6126 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+6311 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+6349 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+6367 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 5.965 seconds (JVM running for 7.561)
+15080 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15081 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15085 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+15275 [http-nio-8080-exec-2] INFO  c.l.p.r.r.controller.TestController - getTestInfo
+29543 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+29796 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+4292 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 20028 (D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test\target\classes started by 83599 in D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test)
+4302 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+4303 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
+4544 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
+4545 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
+4546 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
+7519 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+7552 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+7554 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+7555 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+7769 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+7770 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3220 ms
+8352 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+8685 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.l.p.r.r.c.TestController:
+	{GET [/test/{id}]}: getTestInfo(String)
+8693 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+8740 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+8771 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+8994 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+9054 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+9074 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 8.013 seconds (JVM running for 10.861)
+3346732 [RMI TCP Connection(62)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+3347033 [RMI TCP Connection(62)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2766 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 15432 (D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test\target\classes started by 83599 in D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test)
+2788 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+2789 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
+3039 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
+3040 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
+3041 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
+6956 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+6994 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+6996 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+6997 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+7241 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+7242 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4197 ms
+7798 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+8269 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.l.p.r.r.c.TestController:
+	{GET [/test/{id}]}: getTestInfo(String)
+8276 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+8323 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+8355 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+8544 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+8602 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+8624 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 8.032 seconds (JVM running for 10.292)
+81503 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+81505 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+81507 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+81556 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+81621 [http-nio-8080-exec-3] INFO  c.l.p.r.r.controller.TestController - getTestInfo
+81971 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+81972 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+116516 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+116737 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2980 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 12220 (D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test\target\classes started by 83599 in D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test)
+2991 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+2992 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
+3168 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
+3172 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
+3173 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
+6699 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+6738 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+6739 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+6740 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+6947 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+6948 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3769 ms
+7494 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+7857 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.l.p.r.r.c.TestController:
+	{GET [/test/{id}]}: getTestInfo(String)
+7871 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+7915 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+7944 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+8246 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+8403 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+8429 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 7.863 seconds (JVM running for 10.146)
+11921 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11922 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11924 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+94795 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+94907 [http-nio-8080-exec-1] INFO  c.l.p.r.r.controller.TestController - getTestInfo
+152511 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+152513 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+164262 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+166149 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+166151 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+169256 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+171766 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+171769 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+193608 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+193621 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+193622 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+193623 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+193627 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+193629 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+214165 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+214172 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+214172 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+214174 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+214179 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+214181 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+226441 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+226444 [http-nio-8080-exec-5] INFO  c.l.p.r.r.controller.TestController - getTestInfo
+226446 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+226449 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+320843 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+321075 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2671 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 15048 (D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test\target\classes started by 83599 in D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test)
+2682 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+2696 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
+2844 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
+2845 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
+2846 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
+5877 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+5908 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+5910 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+5910 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+6209 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+6210 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3359 ms
+6837 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+7173 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.l.p.r.r.c.TestController:
+	{GET [/test/{id}]}: getTestInfo(String)
+7180 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+7223 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+7263 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+7462 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+7511 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+7531 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 6.902 seconds (JVM running for 8.734)
+18295 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18297 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18299 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18388 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+18450 [http-nio-8080-exec-1] INFO  c.l.p.r.r.controller.TestController - getTestInfo
+18786 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+18788 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - status : 200
+18789 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+24636 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+24642 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+24643 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - status : 404
+24644 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+24664 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+24726 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+24727 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - status : 404
+24727 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+130864 [http-nio-8080-exec-7] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+130876 [http-nio-8080-exec-7] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+130878 [http-nio-8080-exec-7] INFO  c.l.p.r.r.i.CommonInterceptor - status : 404
+130880 [http-nio-8080-exec-7] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+130883 [http-nio-8080-exec-7] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+130885 [http-nio-8080-exec-7] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+130886 [http-nio-8080-exec-7] INFO  c.l.p.r.r.i.CommonInterceptor - status : 404
+130887 [http-nio-8080-exec-7] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+251568 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+251763 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2447 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 17160 (D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test\target\classes started by 83599 in D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test)
+2466 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+2467 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
+2623 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
+2623 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
+2625 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
+5443 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+5480 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+5482 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+5483 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+5742 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+5743 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3114 ms
+6353 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+6703 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.l.p.r.r.c.TestController:
+	{GET [/test/{id}]}: getTestInfo(String)
+6712 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+6759 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+6787 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+6984 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+7069 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+7091 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 6.63 seconds (JVM running for 9.692)
+15020 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15022 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15049 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 27 ms
+15138 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+15140 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
+15153 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+15153 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - status : 404
+15154 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = REQUEST
+15155 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+15155 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
+15190 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+15192 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
+15616 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+15618 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - status : 404
+15619 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
+15620 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+15622 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
+68270 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+68271 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
+68282 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+68283 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - status : 404
+68283 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = REQUEST
+68284 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+68284 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
+68285 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+68286 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
+68290 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+68292 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - status : 404
+68294 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
+68298 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+68299 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
+101791 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+101990 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+3497 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 17312 (D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test\target\classes started by 83599 in D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test)
+3507 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+3508 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
+3667 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
+3671 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
+3671 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
+7490 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+7548 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+7552 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+7553 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+7937 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+7939 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4264 ms
+8710 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+9147 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.l.p.r.r.c.TestController:
+	{GET [/test/{id}]}: getTestInfo(String)
+9157 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ [/error]}: error(HttpServletRequest)
+9257 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+9311 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+9888 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+9967 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10037 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 9.503 seconds (JVM running for 11.151)
+16944 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16946 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16948 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17126 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+17130 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
+17131 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
+17162 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+17163 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 404
+17164 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = REQUEST
+17165 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+17166 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 404
+17168 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
+17212 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+17215 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 404
+17217 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
+18226 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+18228 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 404
+18235 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
+18237 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+18238 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 404
+18239 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
+25107 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+25112 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
+25114 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
+25138 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+25140 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 404
+25142 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = REQUEST
+25143 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+25144 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 404
+25145 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
+25147 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+25148 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 404
+25149 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
+25154 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+25156 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 404
+25158 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
+25159 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+25161 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 404
+25162 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
+159967 [http-nio-8080-exec-6] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+159970 [http-nio-8080-exec-6] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
+159971 [http-nio-8080-exec-6] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
+159998 [http-nio-8080-exec-6] INFO  c.l.p.r.r.controller.TestController - getTestInfo
+160084 [http-nio-8080-exec-6] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+160084 [http-nio-8080-exec-6] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 200
+160085 [http-nio-8080-exec-6] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = REQUEST
+160085 [http-nio-8080-exec-6] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+160086 [http-nio-8080-exec-6] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 200
+160086 [http-nio-8080-exec-6] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
+319226 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+319227 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
+319227 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
+319235 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+319237 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 404
+319237 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = REQUEST
+319238 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+319238 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 404
+319239 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
+319240 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+319242 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 404
+319242 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
+319245 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+319246 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 404
+319246 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
+319246 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+319247 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 404
+319247 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
+327375 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+327376 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
+327377 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
+327385 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+327386 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 404
+327388 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = REQUEST
+327389 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+327390 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 404
+327391 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
+327392 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+327393 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 404
+327394 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
+327397 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+327399 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 404
+327399 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
+327401 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+327401 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 404
+327402 [http-nio-8080-exec-10] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
+406930 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+406931 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
+406931 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
+406937 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+406938 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 200
+406939 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
+406945 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "a"] with root cause
+java.lang.NumberFormatException: For input string: "a"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.lgcns.project.rest_server_test.rest.controller.TestController.getTestInfo(TestController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+406947 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+406948 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 500
+406948 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
+406952 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+406953 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 500
+406953 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
+406954 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+406954 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 500
+406955 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
+414291 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+414293 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
+414293 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
+414294 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+414296 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 200
+414297 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
+414300 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "a"] with root cause
+java.lang.NumberFormatException: For input string: "a"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.lgcns.project.rest_server_test.rest.controller.TestController.getTestInfo(TestController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+414302 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+414304 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 500
+414304 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
+414307 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+414308 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 500
+414308 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
+414308 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+414309 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 500
+414309 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
+1667241 [RMI TCP Connection(37)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+1667415 [RMI TCP Connection(37)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
