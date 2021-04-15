@@ -36,11 +36,11 @@ public class TestController {
 	public TestVO getTestInfo(@PathVariable String id) {
 		int i = Integer.parseInt(id);
 		logger.info("getTestInfo");
-		/*
+		
 		if(1==1) {
 			throw new ApiException(ExceptionEnum.UNAUTHORIZED);
 		}
-		*/
+		
 		return testMap.get(id);
 	}
 }

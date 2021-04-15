@@ -9,11 +9,11 @@ import lombok.ToString;
 @Getter
 @ToString
 public class ApiExceptionEntity {
-	private int errorCode;
+	private String errorCode;
 	private String errorMessage;
 	
 	@Builder
-	public ApiExceptionEntity(HttpStatus status, int errorCode, String errorMessage) {
+	public ApiExceptionEntity(HttpStatus status, String errorCode, String errorMessage) {
 		this.errorCode = errorCode;
 		this.errorMessage = errorMessage;
 	}

@@ -9,11 +9,11 @@ spring:
 spring:
   profiles: local
   
-#  datasource:
-#    url: jdbc:postgresql://localhost:5432/postgres
-#    username: jinoo_postgre
-#    password: \!wjdwlsdn80
-#    driver-class-name: org.postgresql.Driver
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: \!wjdwlsdn80
+    driver-class-name: org.postgresql.Driver
 
 logging:
   config: classpath:logback-local.xml 
