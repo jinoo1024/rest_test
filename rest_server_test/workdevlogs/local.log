@@ -1,699 +1,1078 @@
-3007 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 13876 (D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test\target\classes started by 83599 in D:\work\dev\sts\workspace_sts-4.9.0.RELEASE\rest_server_test)
-3093 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
-3094 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
-3285 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
-3287 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
-3292 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
-6289 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-6328 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+3021 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 16272 (D:\git\rest_test\rest_server_test\target\classes started by 83599 in D:\git\rest_test\rest_server_test)
+3072 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+3073 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
+3234 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 69:13]
+3234 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 59:13]
+3235 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
+5728 [main] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+5729 [main] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.lgcns.project.rest_server_test'
+6107 [main] DEBUG o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+6147 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\git\rest_test\rest_server_test\target\classes\com\lgcns\project\rest_server_test\rest\mapper\test\TestMapper.class]
+6157 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'testMapper' and 'com.lgcns.project.rest_server_test.rest.mapper.test.TestMapper' mapperInterface
+6162 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'testMapper'.
+7470 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+7509 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+7510 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+7512 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+7779 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+7780 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4535 ms
+8187 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.p6spy.engine.spy.P6SpyDriver found in Thread context class loader sun.misc.Launcher$AppClassLoader@764c12b6
+9802 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\git\rest_test\rest_server_test\target\classes\mapper\test\test.xml]'
+10719 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.l.p.r.r.c.TestController:
+	{PUT [/test/users]}: insertTestUser(TestVO)
+	{GET [/test/users/{id}]}: getTestUserInfo(String)
+	{GET [/test/users]}: getTestAllInfo(String)
+	{POST [/test/transaction]}: transactionTestUser(TestVO)
+	{POST [/test/users]}: updateTestUser(TestVO)
+10726 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	s.d.s.w.ApiResourceController:
+	{ [/swagger-resources/configuration/security]}: securityConfiguration()
+	{ [/swagger-resources/configuration/ui]}: uiConfiguration()
+	{ [/swagger-resources]}: swaggerResources()
+10735 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+10946 [main] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping - initialising the handler methods
+10954 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11153 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11437 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+11468 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+11596 [main] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+11765 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+11836 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+11838 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11955 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12016 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Total number of request handlers 10
+12017 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+12021 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[text/html]}}
+12022 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/swagger-resources/configuration/security], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/security], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+12022 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/swagger-resources/configuration/ui], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/ui], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+12023 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/swagger-resources], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+12023 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/transaction], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/transaction], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
+12024 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/users/{id}], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/users/{id}], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
+12024 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/users], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/users], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
+12025 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/users], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/users], supportedMethods=[PUT], supportedMediaTypes=[], producibleMediaTypes=[]}}
+12026 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/users], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/users], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
+12095 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Combined number of request handlers 10
+12099 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12149 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+12152 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |error|
+12171 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |error|
+12176 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |error|
+12217 [main] DEBUG s.d.schema.DefaultModelProvider - Skipping model of type Ljava/lang/Object; as its either a container type, map, enum or base type, or its already been handled
+12224 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.util.Map<java.lang.String,java.lang.Object>
+12224 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Marking base type Ljava/lang/Object; as seen
+12282 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+12286 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+12290 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+12308 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+12309 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+12310 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+12312 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+12315 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+12316 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+12317 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+12318 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+12319 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+12320 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+12321 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+12321 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+12323 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+12324 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+12324 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+12326 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+12327 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+12328 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+12329 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+12331 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+12331 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+12379 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Lorg/springframework/web/servlet/ModelAndView;
+12381 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |errorHtml|
+12381 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |errorHtml|
+12382 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |errorHtml|
+12456 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property view
+12469 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+12472 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'view' renamed to 'view'
+12473 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property view to model
+12476 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+12477 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+12477 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+12478 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+12481 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property model
+12482 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+12483 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'model' renamed to 'model'
+12483 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property model to model
+12484 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+12484 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+12485 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+12485 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+12486 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property status
+12487 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+12487 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'status' renamed to 'status'
+12488 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property status to model
+12488 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+12488 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+12489 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+12489 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+12500 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property empty
+12501 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+12501 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'empty' renamed to 'empty'
+12502 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property empty to model
+12502 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+12502 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+12503 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+12503 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+12504 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property reference
+12504 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+12504 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'reference' renamed to 'reference'
+12505 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property reference to model
+12505 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+12506 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+12506 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+12506 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+12507 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property viewName
+12507 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+12508 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'viewName' renamed to 'viewName'
+12508 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property viewName to model
+12508 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+12509 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+12509 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+12510 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+12510 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property modelMap
+12511 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+12511 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'modelMap' renamed to 'modelMap'
+12512 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property modelMap to model
+12512 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+12512 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+12513 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+12513 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+12525 [main] DEBUG s.d.schema.DefaultModelProvider - Inferred 7 properties. Properties found empty, model, modelMap, reference, status, view, viewName
+12527 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Generated parameter model id: ModelAndView, name: ModelAndView, schema: {} models
+12528 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Adding a new model with key ModelAndView
+12530 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Adding type Lorg/springframework/ui/ModelMap; for parameter modelMap
+12531 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Recursively resolving dependencies for value type Ljava/lang/Object;
+12531 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Marking base type Ljava/lang/Object; as seen
+12532 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Adding type Lorg/springframework/web/servlet/View; for parameter view
+12532 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Recursively resolving dependencies for type Lorg/springframework/web/servlet/View;
+12533 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property contentType
+12534 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+12535 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'contentType' renamed to 'contentType'
+12535 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property contentType to model
+12535 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+12536 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+12536 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+12536 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+12537 [main] DEBUG s.d.schema.DefaultModelProvider - Inferred 1 properties. Properties found contentType
+12538 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Adding a new model with key View
+12539 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+12539 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+12540 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+12541 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+12542 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+12542 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+12544 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+12547 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+12560 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+12567 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+12568 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+12569 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+12571 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+12572 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+12572 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+12574 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+12574 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+12575 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+12576 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+12577 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+12578 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+12579 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+12581 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+12581 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+12675 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/lang/Object;
+12676 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |getTestAllInfo|
+12677 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |getTestAllInfo|
+12677 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |getTestAllInfo|
+12678 [main] DEBUG s.d.schema.DefaultModelProvider - Skipping model of type Ljava/lang/Object; as its either a container type, map, enum or base type, or its already been handled
+12678 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.lang.Object
+12679 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Marking base type Ljava/lang/Object; as seen
+12711 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: object
+12716 [main] DEBUG s.d.s.r.o.VendorExtensionsReader - Extension count 1 for method getTestAllInfo
+12717 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:object
+12723 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method getTestAllInfo
+12730 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/lang/Object;
+12731 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |getTestUserInfo|
+12733 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |getTestUserInfo|
+12734 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |getTestUserInfo|
+12735 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.lang.Object
+12736 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: object
+12737 [main] DEBUG s.d.s.r.o.VendorExtensionsReader - Extension count 1 for method getTestUserInfo
+12738 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:object
+12738 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method getTestUserInfo
+12740 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/lang/Object;
+12740 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |insertTestUser|
+12740 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding input parameter of type Lcom/lgcns/project/rest_server_test/rest/vo/TestVO;
+12741 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |insertTestUser|
+12741 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |insertTestUser|
+12746 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property userId
+12747 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+12748 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'userId' renamed to 'userId'
+12748 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property userId to model
+12750 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+12750 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+12751 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+12751 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+12751 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property seq
+12752 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+12752 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'seq' renamed to 'seq'
+12753 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property seq to model
+12753 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+12753 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+12754 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+12754 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+12755 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property userNm
+12755 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+12755 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'userNm' renamed to 'userNm'
+12756 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property userNm to model
+12756 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+12757 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+12757 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+12757 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+12758 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property email
+12758 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+12759 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'email' renamed to 'email'
+12759 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property email to model
+12760 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+12760 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+12761 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+12762 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+12762 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property regDate
+12763 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+12763 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'regDate' renamed to 'regDate'
+12765 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property regDate to model
+12766 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+12767 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+12767 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+12768 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+12768 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property modDate
+12769 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+12769 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'modDate' renamed to 'modDate'
+12770 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property modDate to model
+12770 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+12770 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+12770 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+12772 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+12773 [main] DEBUG s.d.schema.DefaultModelProvider - Inferred 6 properties. Properties found email, modDate, regDate, seq, userId, userNm
+12773 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Generated parameter model id: TestVO, name: TestVO, schema: {} models
+12775 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Adding a new model with key TestVO
+12776 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.lang.Object
+12778 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: object
+12782 [main] DEBUG s.d.s.r.o.VendorExtensionsReader - Extension count 1 for method insertTestUser
+12783 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:object
+12784 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method insertTestUser
+12786 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type V
+12786 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |transactionTestUser|
+12787 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding input parameter of type Lcom/lgcns/project/rest_server_test/rest/vo/TestVO;
+12787 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |transactionTestUser|
+12788 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |transactionTestUser|
+12788 [main] DEBUG s.d.schema.DefaultModelProvider - Skipping model of type V as its either a container type, map, enum or base type, or its already been handled
+12789 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for void
+12789 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Generated parameter model id: TestVO, name: TestVO, schema: {} models
+12790 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: null
+12791 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method transactionTestUser
+12792 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/lang/Object;
+12792 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |updateTestUser|
+12793 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding input parameter of type Lcom/lgcns/project/rest_server_test/rest/vo/TestVO;
+12794 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |updateTestUser|
+12795 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |updateTestUser|
+12795 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Generated parameter model id: TestVO, name: TestVO, schema: {} models
+12796 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.lang.Object
+12797 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: object
+12798 [main] DEBUG s.d.s.r.o.VendorExtensionsReader - Extension count 1 for method updateTestUser
+12798 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:object
+12799 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method updateTestUser
+12862 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 12.299 seconds (JVM running for 14.362)
+29335 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+29337 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+29339 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+29386 [http-nio-8081-exec-1] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping - looking up handler for path: /test/users/user01
+29400 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+29401 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
+29402 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
+29483 [http-nio-8081-exec-1] INFO  c.l.p.r.r.controller.TestController - getTestUserInfo
+29485 [http-nio-8081-exec-1] INFO  c.l.p.r.r.controller.TestController - ********* sleep start***************
+39487 [http-nio-8081-exec-1] INFO  c.l.p.r.r.controller.TestController - ********* sleep end***************
+39517 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+39521 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+39521 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+39522 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+39522 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+39522 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+39523 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+39523 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+39524 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+39524 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+39525 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+39526 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.p6spy.engine.spy.P6SpyDriver"
+39526 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+39527 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+39528 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+39528 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+39528 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+39529 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+39529 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:p6spy:postgresql://localhost:5432/test
+39531 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+39531 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+39532 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+39532 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+39532 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+39533 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+39534 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+39534 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+39535 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+39535 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+39535 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+39536 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+39536 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+39536 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+39537 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - username........................"postgres"
+39537 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+39537 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+41459 [http-nio-8081-exec-1] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@6a7d08c2
+41468 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+41568 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+41569 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+41609 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f9c42bf]
+41702 [http-nio-8081-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.p6spy.engine.wrapper.ConnectionWrapper@61229205] will be managed by Spring
+41722 [http-nio-8081-exec-1] DEBUG c.l.p.r.r.m.t.T.getTestUserInfo - ==>  Preparing: select a.user_id ,a.seq ,a.user_nm ,a.email ,a.reg_date ,a.mod_date from REST_TEST a where a.user_id = ?
+41759 [http-nio-8081-exec-1] DEBUG c.l.p.r.r.m.t.T.getTestUserInfo - ==> Parameters: user01(String)
+41774 [http-nio-8081-exec-1] INFO  p6spy - #1618820912896 | took 11ms | statement | connection 1| url jdbc:p6spy:postgresql://localhost:5432/test
+select
+			a.user_id
+			,a.seq
+			,a.user_nm
+			,a.email
+			,a.reg_date
+			,a.mod_date
+		from REST_TEST a 
+		where a.user_id = ?
+select
+			a.user_id
+			,a.seq
+			,a.user_nm
+			,a.email
+			,a.reg_date
+			,a.mod_date
+		from REST_TEST a 
+		where a.user_id = 'user01';
+41775 [http-nio-8081-exec-1] INFO  p6spy - #1618820912897 | took 13ms | statement | connection 0| url jdbc:postgresql://localhost:5432/test
+select
+			a.user_id
+			,a.seq
+			,a.user_nm
+			,a.email
+			,a.reg_date
+			,a.mod_date
+		from REST_TEST a 
+		where a.user_id = ?
+select
+			a.user_id
+			,a.seq
+			,a.user_nm
+			,a.email
+			,a.reg_date
+			,a.mod_date
+		from REST_TEST a 
+		where a.user_id = 'user01';
+41797 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@59736ab8
+41820 [http-nio-8081-exec-1] DEBUG c.l.p.r.r.m.t.T.getTestUserInfo - <==      Total: 1
+41824 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f9c42bf]
+41826 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f9c42bf]
+41828 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f9c42bf]
+41829 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f9c42bf]
+41833 [http-nio-8081-exec-1] INFO  p6spy - #1618820912955 | took 3ms | commit | connection 1| url jdbc:p6spy:postgresql://localhost:5432/test
+
+;
+41834 [http-nio-8081-exec-1] INFO  p6spy - #1618820912956 | took 3ms | commit | connection 0| url jdbc:postgresql://localhost:5432/test
+
+;
+41998 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@57b48fe6
+42048 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+42050 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 200
+42051 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = REQUEST
+42052 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+42053 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 200
+42054 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
+42165 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@168985dd
+42340 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@54ed0b1e
+42532 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@27d575da
+42702 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@2c5ba5a9
+42869 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@76a67a92
+43020 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@4a2f2aa3
+43174 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@375f6e16
+43176 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+71572 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+71573 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+101575 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+101576 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+131581 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+131582 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+161583 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+161584 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+191586 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+191587 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+221590 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+221593 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+251594 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+251595 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+269923 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+270124 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+270130 [RMI TCP Connection(14)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+270132 [RMI TCP Connection(14)-127.0.0.1] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+270136 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.p6spy.engine.wrapper.ConnectionWrapper@6a7d08c2: (connection evicted)
+270139 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.p6spy.engine.wrapper.ConnectionWrapper@59736ab8: (connection evicted)
+270142 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.p6spy.engine.wrapper.ConnectionWrapper@57b48fe6: (connection evicted)
+270145 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.p6spy.engine.wrapper.ConnectionWrapper@168985dd: (connection evicted)
+270146 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.p6spy.engine.wrapper.ConnectionWrapper@54ed0b1e: (connection evicted)
+270151 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.p6spy.engine.wrapper.ConnectionWrapper@27d575da: (connection evicted)
+270152 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.p6spy.engine.wrapper.ConnectionWrapper@2c5ba5a9: (connection evicted)
+270154 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.p6spy.engine.wrapper.ConnectionWrapper@76a67a92: (connection evicted)
+270157 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.p6spy.engine.wrapper.ConnectionWrapper@4a2f2aa3: (connection evicted)
+270159 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.p6spy.engine.wrapper.ConnectionWrapper@375f6e16: (connection evicted)
+270161 [RMI TCP Connection(14)-127.0.0.1] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+270162 [RMI TCP Connection(14)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2199 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 9084 (D:\git\rest_test\rest_server_test\target\classes started by 83599 in D:\git\rest_test\rest_server_test)
+2213 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+2214 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
+2331 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 69:13]
+2332 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 59:13]
+2333 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
+4585 [main] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+4586 [main] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.lgcns.project.rest_server_test'
+4895 [main] DEBUG o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+4933 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\git\rest_test\rest_server_test\target\classes\com\lgcns\project\rest_server_test\rest\mapper\test\TestMapper.class]
+4952 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'testMapper' and 'com.lgcns.project.rest_server_test.rest.mapper.test.TestMapper' mapperInterface
+4968 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'testMapper'.
+6278 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+6329 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
 6329 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-6331 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
-6582 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-6583 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3284 ms
-7266 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-7602 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+6333 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+6586 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+6587 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4251 ms
+6920 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.p6spy.engine.spy.P6SpyDriver found in Thread context class loader sun.misc.Launcher$AppClassLoader@764c12b6
+7849 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\git\rest_test\rest_server_test\target\classes\mapper\test\test.xml]'
+8704 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
 	c.l.p.r.r.c.TestController:
-	{GET [/test/{id}]}: getTestInfo(String)
-7609 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	{POST [/test/transaction]}: transactionTestUser(TestVO)
+	{PUT [/test/users]}: insertTestUser(TestVO)
+	{GET [/test/users/{id}]}: getTestUserInfo(String)
+	{GET [/test/users]}: getTestAllInfo(String)
+	{POST [/test/users]}: updateTestUser(TestVO)
+8710 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	s.d.s.w.ApiResourceController:
+	{ [/swagger-resources/configuration/security]}: securityConfiguration()
+	{ [/swagger-resources]}: swaggerResources()
+	{ [/swagger-resources/configuration/ui]}: uiConfiguration()
+8720 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
 	o.s.b.a.w.s.e.BasicErrorController:
 	{ [/error]}: error(HttpServletRequest)
 	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-7666 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
-7697 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
-7933 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-7999 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-8022 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 7.375 seconds (JVM running for 10.003)
-8585 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-8588 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-8590 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-8645 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-8647 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
-8648 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
-8716 [http-nio-8080-exec-1] INFO  c.l.p.r.r.controller.TestController - getTestInfo
-8727 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-8727 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 200
-8728 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
-8736 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.lgcns.project.rest_server_test.rest.excpetion.ApiException: Unauthorized] with root cause
-com.lgcns.project.rest_server_test.rest.excpetion.ApiException: Unauthorized
-	at com.lgcns.project.rest_server_test.rest.controller.TestController.getTestInfo(TestController.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-8770 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-8771 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 500
-8771 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
-9091 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
-9092 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 500
-9092 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
-9092 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-9093 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 500
-9093 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
-23998 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-24000 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
-24001 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
-24002 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-24004 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 200
-24005 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
-24008 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "a"] with root cause
-java.lang.NumberFormatException: For input string: "a"
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.lang.Integer.parseInt(Integer.java:580)
-	at java.lang.Integer.parseInt(Integer.java:615)
-	at com.lgcns.project.rest_server_test.rest.controller.TestController.getTestInfo(TestController.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-24019 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-24020 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 500
-24021 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
-24026 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
-24030 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 500
-24032 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
-24033 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-24034 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 500
-24035 [http-nio-8080-exec-3] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
-39222 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-39224 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
-39225 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
-39227 [http-nio-8080-exec-5] INFO  c.l.p.r.r.controller.TestController - getTestInfo
-39228 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-39229 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 200
-39229 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
-39230 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.lgcns.project.rest_server_test.rest.excpetion.ApiException: Unauthorized] with root cause
-com.lgcns.project.rest_server_test.rest.excpetion.ApiException: Unauthorized
-	at com.lgcns.project.rest_server_test.rest.controller.TestController.getTestInfo(TestController.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-39232 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-39233 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 500
-39234 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
-39237 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
-39237 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 500
-39238 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
-39238 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-39238 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 500
-39240 [http-nio-8080-exec-5] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
-107516 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-107517 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
-107518 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
-107519 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-107520 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 200
-107520 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
-107522 [http-nio-8080-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "a"] with root cause
-java.lang.NumberFormatException: For input string: "a"
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.lang.Integer.parseInt(Integer.java:580)
-	at java.lang.Integer.parseInt(Integer.java:615)
-	at com.lgcns.project.rest_server_test.rest.controller.TestController.getTestInfo(TestController.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-107524 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-107525 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 500
-107526 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
-107529 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
-107531 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 500
-107531 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
-107532 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-107533 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 500
-107534 [http-nio-8080-exec-9] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
-2477 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 13744 (D:\git\rest_test\rest_server_test\target\classes started by 83599 in D:\git\rest_test\rest_server_test)
-2486 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
-2488 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
-2617 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
-2617 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
-2618 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
-5135 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-5168 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-5169 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-5170 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
-5394 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-5395 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2774 ms
-5871 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-6185 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+8923 [main] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping - initialising the handler methods
+8928 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+9105 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+9414 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+9446 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+9537 [main] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+9666 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+9707 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+9709 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+9814 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+9865 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Total number of request handlers 10
+9866 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+9870 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[text/html]}}
+9870 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/swagger-resources/configuration/security], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/security], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+9871 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/swagger-resources/configuration/ui], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/ui], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+9872 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/swagger-resources], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+9872 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/transaction], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/transaction], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
+9873 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/users/{id}], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/users/{id}], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
+9873 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/users], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/users], supportedMethods=[PUT], supportedMediaTypes=[], producibleMediaTypes=[]}}
+9874 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/users], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/users], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
+9874 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/users], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/users], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
+9940 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Combined number of request handlers 10
+9942 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+9984 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+9986 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |error|
+9989 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |error|
+9997 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |error|
+10039 [main] DEBUG s.d.schema.DefaultModelProvider - Skipping model of type Ljava/lang/Object; as its either a container type, map, enum or base type, or its already been handled
+10046 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.util.Map<java.lang.String,java.lang.Object>
+10047 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Marking base type Ljava/lang/Object; as seen
+10082 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10085 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10090 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10106 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10112 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10113 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10115 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10116 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10117 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10119 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10120 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10121 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10122 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10123 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10124 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10126 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10127 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10128 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10129 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10130 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10131 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10133 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10134 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10135 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10171 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Lorg/springframework/web/servlet/ModelAndView;
+10173 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |errorHtml|
+10174 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |errorHtml|
+10175 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |errorHtml|
+10247 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property view
+10258 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+10263 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'view' renamed to 'view'
+10263 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property view to model
+10264 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+10265 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+10266 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+10267 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+10270 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property model
+10271 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+10274 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'model' renamed to 'model'
+10274 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property model to model
+10275 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+10277 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+10277 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+10278 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+10278 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property status
+10280 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+10281 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'status' renamed to 'status'
+10281 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property status to model
+10282 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+10282 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+10284 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+10284 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+10296 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property empty
+10297 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+10297 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'empty' renamed to 'empty'
+10298 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property empty to model
+10298 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+10299 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+10299 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+10300 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+10300 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property reference
+10301 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+10301 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'reference' renamed to 'reference'
+10302 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property reference to model
+10302 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+10303 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+10303 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+10304 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+10304 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property viewName
+10305 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+10305 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'viewName' renamed to 'viewName'
+10306 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property viewName to model
+10306 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+10307 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+10308 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+10308 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+10308 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property modelMap
+10309 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+10309 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'modelMap' renamed to 'modelMap'
+10310 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property modelMap to model
+10310 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+10311 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+10311 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+10312 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+10326 [main] DEBUG s.d.schema.DefaultModelProvider - Inferred 7 properties. Properties found empty, model, modelMap, reference, status, view, viewName
+10330 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Generated parameter model id: ModelAndView, name: ModelAndView, schema: {} models
+10334 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Adding a new model with key ModelAndView
+10337 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Adding type Lorg/springframework/ui/ModelMap; for parameter modelMap
+10337 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Recursively resolving dependencies for value type Ljava/lang/Object;
+10338 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Marking base type Ljava/lang/Object; as seen
+10339 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Adding type Lorg/springframework/web/servlet/View; for parameter view
+10340 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Recursively resolving dependencies for type Lorg/springframework/web/servlet/View;
+10341 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property contentType
+10342 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+10344 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'contentType' renamed to 'contentType'
+10344 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property contentType to model
+10345 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+10346 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+10347 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+10348 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+10349 [main] DEBUG s.d.schema.DefaultModelProvider - Inferred 1 properties. Properties found contentType
+10349 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Adding a new model with key View
+10351 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10352 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10353 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10357 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10358 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10359 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10360 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10360 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10362 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10363 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10364 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10365 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10367 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10367 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10368 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10369 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10369 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10370 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10371 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10372 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10372 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10373 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10374 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10375 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10455 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/lang/Object;
+10456 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |getTestAllInfo|
+10457 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |getTestAllInfo|
+10458 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |getTestAllInfo|
+10459 [main] DEBUG s.d.schema.DefaultModelProvider - Skipping model of type Ljava/lang/Object; as its either a container type, map, enum or base type, or its already been handled
+10460 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.lang.Object
+10460 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Marking base type Ljava/lang/Object; as seen
+10489 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: object
+10493 [main] DEBUG s.d.s.r.o.VendorExtensionsReader - Extension count 1 for method getTestAllInfo
+10494 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:object
+10498 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method getTestAllInfo
+10505 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/lang/Object;
+10506 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |getTestUserInfo|
+10508 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |getTestUserInfo|
+10511 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |getTestUserInfo|
+10514 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.lang.Object
+10517 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: object
+10518 [main] DEBUG s.d.s.r.o.VendorExtensionsReader - Extension count 1 for method getTestUserInfo
+10519 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:object
+10520 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method getTestUserInfo
+10522 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/lang/Object;
+10523 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |insertTestUser|
+10523 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding input parameter of type Lcom/lgcns/project/rest_server_test/rest/vo/TestVO;
+10524 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |insertTestUser|
+10525 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |insertTestUser|
+10529 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property userId
+10530 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+10531 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'userId' renamed to 'userId'
+10532 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property userId to model
+10533 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+10533 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+10534 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+10534 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+10535 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property seq
+10535 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+10536 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'seq' renamed to 'seq'
+10536 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property seq to model
+10536 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+10537 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+10537 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+10538 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+10538 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property userNm
+10539 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+10539 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'userNm' renamed to 'userNm'
+10540 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property userNm to model
+10540 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+10540 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+10541 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+10541 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+10542 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property email
+10543 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+10543 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'email' renamed to 'email'
+10543 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property email to model
+10544 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+10544 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+10545 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+10545 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+10546 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property regDate
+10546 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+10547 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'regDate' renamed to 'regDate'
+10547 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property regDate to model
+10548 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+10548 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+10548 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+10549 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+10549 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property modDate
+10550 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+10550 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'modDate' renamed to 'modDate'
+10551 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property modDate to model
+10551 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+10551 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+10552 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+10552 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+10553 [main] DEBUG s.d.schema.DefaultModelProvider - Inferred 6 properties. Properties found email, modDate, regDate, seq, userId, userNm
+10553 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Generated parameter model id: TestVO, name: TestVO, schema: {} models
+10554 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Adding a new model with key TestVO
+10555 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.lang.Object
+10560 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: object
+10561 [main] DEBUG s.d.s.r.o.VendorExtensionsReader - Extension count 1 for method insertTestUser
+10562 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:object
+10562 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method insertTestUser
+10563 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type V
+10564 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |transactionTestUser|
+10564 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding input parameter of type Lcom/lgcns/project/rest_server_test/rest/vo/TestVO;
+10565 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |transactionTestUser|
+10565 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |transactionTestUser|
+10566 [main] DEBUG s.d.schema.DefaultModelProvider - Skipping model of type V as its either a container type, map, enum or base type, or its already been handled
+10567 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for void
+10568 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Generated parameter model id: TestVO, name: TestVO, schema: {} models
+10569 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: null
+10573 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method transactionTestUser
+10576 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/lang/Object;
+10576 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |updateTestUser|
+10577 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding input parameter of type Lcom/lgcns/project/rest_server_test/rest/vo/TestVO;
+10577 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |updateTestUser|
+10577 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |updateTestUser|
+10578 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Generated parameter model id: TestVO, name: TestVO, schema: {} models
+10578 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.lang.Object
+10580 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: object
+10583 [main] DEBUG s.d.s.r.o.VendorExtensionsReader - Extension count 1 for method updateTestUser
+10584 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:object
+10584 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method updateTestUser
+10663 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 10.196 seconds (JVM running for 11.612)
+204162 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+204164 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+204167 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+204210 [http-nio-8081-exec-1] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping - looking up handler for path: /
+204233 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+204233 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
+204234 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
+204234 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+204235 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 404
+204235 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = REQUEST
+204236 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+204236 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 404
+204236 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
+204256 [http-nio-8081-exec-1] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping - looking up handler for path: /error
+204260 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+204261 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 404
+204261 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
+204421 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
+204423 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 404
+204423 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
+204424 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+204425 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 404
+204426 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
+722539 [RMI TCP Connection(19)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+722725 [RMI TCP Connection(19)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2238 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 14580 (D:\git\rest_test\rest_server_test\target\classes started by 83599 in D:\git\rest_test\rest_server_test)
+2249 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+2250 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
+2374 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 69:13]
+2376 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 59:13]
+2377 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
+4740 [main] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+4741 [main] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.lgcns.project.rest_server_test'
+5124 [main] DEBUG o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+5176 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\git\rest_test\rest_server_test\target\classes\com\lgcns\project\rest_server_test\rest\mapper\test\TestMapper.class]
+5191 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'testMapper' and 'com.lgcns.project.rest_server_test.rest.mapper.test.TestMapper' mapperInterface
+5197 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'testMapper'.
+6651 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+6702 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+6703 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+6704 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+6906 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+6907 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4524 ms
+7222 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.p6spy.engine.spy.P6SpyDriver found in Thread context class loader sun.misc.Launcher$AppClassLoader@764c12b6
+8206 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\git\rest_test\rest_server_test\target\classes\mapper\test\test.xml]'
+9157 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
 	c.l.p.r.r.c.TestController:
-	{GET [/test/{id}]}: getTestInfo(String)
-6190 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	{GET [/test/users/{id}]}: getTestUserInfo(String)
+	{GET [/test/users]}: getTestAllInfo(String)
+	{POST [/test/users]}: updateTestUser(TestVO)
+	{PUT [/test/users]}: insertTestUser(TestVO)
+	{POST [/test/transaction]}: transactionTestUser(TestVO)
+9164 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	s.d.s.w.ApiResourceController:
+	{ [/swagger-resources/configuration/security]}: securityConfiguration()
+	{ [/swagger-resources]}: swaggerResources()
+	{ [/swagger-resources/configuration/ui]}: uiConfiguration()
+9172 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
 	o.s.b.a.w.s.e.BasicErrorController:
-	{ [/error]}: error(HttpServletRequest)
 	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-6227 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
-6280 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
-6446 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-6501 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-6520 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 5.959 seconds (JVM running for 7.504)
-20731 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-20733 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-20735 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-20777 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-20779 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
-20780 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
-20833 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-20835 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 200
-20836 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
-20844 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "a"] with root cause
-java.lang.NumberFormatException: For input string: "a"
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.lang.Integer.parseInt(Integer.java:580)
-	at java.lang.Integer.parseInt(Integer.java:615)
-	at com.lgcns.project.rest_server_test.rest.controller.TestController.getTestInfo(TestController.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-20873 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-20874 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 500
-20876 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
-21161 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
-21162 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 500
-21163 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
-21164 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-21164 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 500
-21165 [http-nio-8080-exec-4] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
-501479 [RMI TCP Connection(19)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-501678 [RMI TCP Connection(19)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-1882 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 4664 (D:\git\rest_test\rest_server_test\target\classes started by 83599 in D:\git\rest_test\rest_server_test)
-1890 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
-1890 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
-1998 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
-1998 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
-1999 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
-4119 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-4147 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-4149 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-4149 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
-4322 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-4322 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2320 ms
-4757 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-4997 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
-	c.l.p.r.r.c.TestController:
-	{GET [/test/{id}]}: getTestInfo(String)
-5002 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
-	o.s.b.a.w.s.e.BasicErrorController:
 	{ [/error]}: error(HttpServletRequest)
-	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-5036 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
-5058 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
-5208 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-5245 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-5262 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 4.892 seconds (JVM running for 7.029)
-16352 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-16353 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-16354 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-16391 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-16392 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
-16393 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
-16439 [http-nio-8080-exec-1] INFO  c.l.p.r.r.a.TestCommonControllerAdvice - TestCommonControllerAdvice.exceptionHandler for Exception.class
-16697 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-16700 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 500
-16701 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
-123878 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-124056 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2364 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 2348 (D:\git\rest_test\rest_server_test\target\classes started by 83599 in D:\git\rest_test\rest_server_test)
-2373 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
-2374 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
-2505 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
-2506 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
-2508 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
-5315 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-5356 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-5358 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-5360 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
-5615 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-5617 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3103 ms
-6236 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-6594 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
-	c.l.p.r.r.c.TestController:
-	{GET [/test/{id}]}: getTestInfo(String)
-6601 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
-	o.s.b.a.w.s.e.BasicErrorController:
-	{ [/error]}: error(HttpServletRequest)
-	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-6646 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
-6680 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
-6883 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-6934 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-6953 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 6.354 seconds (JVM running for 7.79)
-13117 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-13118 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-13121 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-13168 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-13169 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
-13171 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
-13235 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-13235 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 200
-13236 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
-13245 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "a"] with root cause
-java.lang.NumberFormatException: For input string: "a"
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.lang.Integer.parseInt(Integer.java:580)
-	at java.lang.Integer.parseInt(Integer.java:615)
-	at com.lgcns.project.rest_server_test.rest.controller.TestController.getTestInfo(TestController.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-13282 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-13282 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 500
-13283 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = ERROR
-13625 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.postHandle ****************************
-13627 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.status : 500
-13627 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - postHandle.getDispatcherType = ERROR
-13628 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-13628 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 500
-13629 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = ERROR
-81444 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-81602 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2095 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 14156 (D:\git\rest_test\rest_server_test\target\classes started by 83599 in D:\git\rest_test\rest_server_test)
-2106 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
-2107 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
-2287 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
-2288 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
-2288 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
-4455 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-4484 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-4486 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-4486 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
-4664 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-4665 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2373 ms
-5131 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-5373 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
-	c.l.p.r.r.c.TestController:
-	{GET [/test/{id}]}: getTestInfo(String)
-5378 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
-	o.s.b.a.w.s.e.BasicErrorController:
-	{ [/error]}: error(HttpServletRequest)
-	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-5421 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
-5450 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
-5623 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-5664 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-5683 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 5.227 seconds (JVM running for 6.466)
-26773 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-26775 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-26777 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-26818 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-26818 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
-26819 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
-26870 [http-nio-8080-exec-2] INFO  c.l.p.r.r.controller.TestController - getTestInfo
-26881 [http-nio-8080-exec-2] INFO  c.l.p.r.r.a.TestCommonControllerAdvice - TestCommonControllerAdvice.exceptionHandler for ApiException.class
-27162 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-27163 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 401
-27163 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
-343418 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-343654 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-1724 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 4088 (D:\git\rest_test\rest_server_test\target\classes started by 83599 in D:\git\rest_test\rest_server_test)
-1732 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
-1733 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
-1839 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
-1840 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
-1840 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
-3862 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-3893 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-3894 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-3895 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
-4063 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-4064 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2221 ms
-4472 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-4694 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
-	c.l.p.r.r.c.TestController:
-	{GET [/test/{id}]}: getTestInfo(String)
-4698 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
-	o.s.b.a.w.s.e.BasicErrorController:
-	{ [/error]}: error(HttpServletRequest)
-	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-4729 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
-4750 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
-4885 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-4918 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-4933 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 4.575 seconds (JVM running for 5.676)
-20722 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-20723 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-20724 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-20776 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-20777 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
-20778 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
-20825 [http-nio-8080-exec-2] INFO  c.l.p.r.r.controller.TestController - getTestInfo
-20836 [http-nio-8080-exec-2] INFO  c.l.p.r.r.a.TestCommonControllerAdvice - TestCommonControllerAdvice.exceptionHandler for ApiException.class
-21106 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-21107 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 401
-21107 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
-383947 [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-384101 [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-1987 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 1520 (D:\git\rest_test\rest_server_test\target\classes started by 83599 in D:\git\rest_test\rest_server_test)
-1994 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
-1995 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
-2111 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
-2112 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
-2112 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
-4397 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-4430 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-4431 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-4431 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
-4620 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-4621 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2505 ms
-5118 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-5369 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
-	c.l.p.r.r.c.TestController:
-	{GET [/test/{id}]}: getTestInfo(String)
-5375 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
-	o.s.b.a.w.s.e.BasicErrorController:
-	{ [/error]}: error(HttpServletRequest)
-	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-5412 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
-5439 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
-5605 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-5640 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-5656 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 5.23 seconds (JVM running for 6.506)
-13753 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-13754 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-13756 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-13808 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-13809 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
-13810 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
-13891 [http-nio-8080-exec-2] INFO  c.l.p.r.r.controller.TestController - getTestInfo
-13901 [http-nio-8080-exec-2] INFO  c.l.p.r.r.a.TestCommonControllerAdvice - TestCommonControllerAdvice.exceptionHandler for ApiException.class
-14167 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-14168 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 401
-14168 [http-nio-8080-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
-1040118 [RMI TCP Connection(28)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-1040316 [RMI TCP Connection(28)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2619 [main] INFO  c.l.p.r.RestServerTestApplication - Starting RestServerTestApplication using Java 1.8.0_281 on LCSC06V585 with PID 13504 (D:\git\rest_test\rest_server_test\target\classes started by 83599 in D:\git\rest_test\rest_server_test)
-2630 [main] DEBUG c.l.p.r.RestServerTestApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
-2631 [main] INFO  c.l.p.r.RestServerTestApplication - The following profiles are active: local
-2793 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13]
-2794 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 26:13]
-2795 [main] WARN  o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 10:13]
-5753 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-5788 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-5789 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-5790 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
-6022 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-6023 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3224 ms
-6745 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-7189 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
-	c.l.p.r.r.c.TestController:
-	{GET [/test/{id}]}: getTestInfo(String)
-7198 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
-	o.s.b.a.w.s.e.BasicErrorController:
-	{ [/error]}: error(HttpServletRequest)
-	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-7251 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
-7288 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
-7530 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-7744 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-7775 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 7.238 seconds (JVM running for 10.192)
-14010 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-14013 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-14016 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-14099 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
-14100 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
-14101 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
-14183 [http-nio-8080-exec-1] INFO  c.l.p.r.r.controller.TestController - getTestInfo
-14197 [http-nio-8080-exec-1] INFO  c.l.p.r.r.a.TestCommonControllerAdvice - TestCommonControllerAdvice.exceptionHandler for ApiException.class
-14494 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
-14496 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 401
-14496 [http-nio-8080-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
-380224 [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-380412 [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+9390 [main] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping - initialising the handler methods
+9397 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+9586 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+9875 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+9918 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+10052 [main] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+10205 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+10247 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+10249 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+10357 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10428 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Total number of request handlers 10
+10430 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+10435 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[text/html]}}
+10436 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/swagger-resources/configuration/security], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/security], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+10439 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/swagger-resources/configuration/ui], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/ui], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+10439 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/swagger-resources], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+10440 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/transaction], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/transaction], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
+10440 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/users/{id}], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/users/{id}], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
+10441 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/users], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/users], supportedMethods=[PUT], supportedMediaTypes=[], producibleMediaTypes=[]}}
+10442 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/users], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/users], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
+10443 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Adding key: [/test/users], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/users], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
+10523 [main] DEBUG s.d.s.w.p.DefaultRequestHandlerCombiner - Combined number of request handlers 10
+10529 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+10583 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+10585 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |error|
+10588 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |error|
+10607 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |error|
+10652 [main] DEBUG s.d.schema.DefaultModelProvider - Skipping model of type Ljava/lang/Object; as its either a container type, map, enum or base type, or its already been handled
+10660 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.util.Map<java.lang.String,java.lang.Object>
+10662 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Marking base type Ljava/lang/Object; as seen
+10695 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10696 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10699 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10714 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10715 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10716 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10717 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10718 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10719 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10721 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10722 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10722 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10724 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10725 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10725 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10727 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10728 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10728 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10729 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10730 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10731 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10732 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: Map«string,object»
+10733 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:Map«string,object»
+10734 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method error
+10766 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Lorg/springframework/web/servlet/ModelAndView;
+10768 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |errorHtml|
+10769 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |errorHtml|
+10769 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |errorHtml|
+10843 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property view
+10856 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+10860 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'view' renamed to 'view'
+10861 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property view to model
+10863 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+10864 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+10864 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+10865 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getView
+10868 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property model
+10869 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+10869 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'model' renamed to 'model'
+10870 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property model to model
+10871 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+10871 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+10872 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+10872 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModel
+10873 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property status
+10873 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+10874 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'status' renamed to 'status'
+10874 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property status to model
+10875 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+10875 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+10875 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+10876 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getStatus
+10886 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property empty
+10887 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+10888 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'empty' renamed to 'empty'
+10888 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property empty to model
+10888 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+10889 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+10889 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+10890 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isEmpty
+10891 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property viewName
+10892 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+10892 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'viewName' renamed to 'viewName'
+10892 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property viewName to model
+10893 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+10893 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+10894 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+10894 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getViewName
+10894 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property reference
+10896 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+10896 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'reference' renamed to 'reference'
+10896 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property reference to model
+10897 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+10898 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+10898 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+10900 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member isReference
+10901 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property modelMap
+10902 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+10902 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'modelMap' renamed to 'modelMap'
+10903 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property modelMap to model
+10903 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+10903 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+10904 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+10904 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getModelMap
+10915 [main] DEBUG s.d.schema.DefaultModelProvider - Inferred 7 properties. Properties found empty, model, modelMap, reference, status, view, viewName
+10918 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Generated parameter model id: ModelAndView, name: ModelAndView, schema: {} models
+10919 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Adding a new model with key ModelAndView
+10921 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Adding type Lorg/springframework/ui/ModelMap; for parameter modelMap
+10922 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Recursively resolving dependencies for value type Ljava/lang/Object;
+10922 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Marking base type Ljava/lang/Object; as seen
+10922 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Adding type Lorg/springframework/web/servlet/View; for parameter view
+10923 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Recursively resolving dependencies for type Lorg/springframework/web/servlet/View;
+10924 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property contentType
+10925 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+10925 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'contentType' renamed to 'contentType'
+10926 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property contentType to model
+10926 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+10927 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+10927 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+10928 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped getter for member getContentType
+10929 [main] DEBUG s.d.schema.DefaultModelProvider - Inferred 1 properties. Properties found contentType
+10929 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Adding a new model with key View
+10931 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10932 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10932 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10934 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10934 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10935 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10936 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10936 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10937 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10938 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10938 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10939 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10940 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10940 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10941 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10942 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10943 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10944 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10945 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10945 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10946 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+10947 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: ModelAndView
+10947 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:ModelAndView
+10948 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method errorHtml
+11029 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/lang/Object;
+11030 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |getTestAllInfo|
+11030 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |getTestAllInfo|
+11041 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |getTestAllInfo|
+11041 [main] DEBUG s.d.schema.DefaultModelProvider - Skipping model of type Ljava/lang/Object; as its either a container type, map, enum or base type, or its already been handled
+11042 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.lang.Object
+11042 [main] DEBUG s.d.s.DefaultModelDependencyProvider - Marking base type Ljava/lang/Object; as seen
+11066 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: object
+11070 [main] DEBUG s.d.s.r.o.VendorExtensionsReader - Extension count 1 for method getTestAllInfo
+11072 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:object
+11077 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method getTestAllInfo
+11082 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/lang/Object;
+11086 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |getTestUserInfo|
+11088 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |getTestUserInfo|
+11089 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |getTestUserInfo|
+11090 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.lang.Object
+11092 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: object
+11092 [main] DEBUG s.d.s.r.o.VendorExtensionsReader - Extension count 1 for method getTestUserInfo
+11093 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:object
+11096 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method getTestUserInfo
+11098 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/lang/Object;
+11099 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |insertTestUser|
+11099 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding input parameter of type Lcom/lgcns/project/rest_server_test/rest/vo/TestVO;
+11099 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |insertTestUser|
+11100 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |insertTestUser|
+11106 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property userId
+11106 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+11107 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'userId' renamed to 'userId'
+11107 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property userId to model
+11108 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+11108 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+11108 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+11109 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserId
+11109 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property seq
+11110 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+11110 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'seq' renamed to 'seq'
+11110 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property seq to model
+11111 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+11111 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+11111 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+11112 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setSeq
+11112 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property userNm
+11113 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+11113 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'userNm' renamed to 'userNm'
+11114 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property userNm to model
+11114 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+11115 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+11115 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+11115 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setUserNm
+11116 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property email
+11117 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+11117 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'email' renamed to 'email'
+11118 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property email to model
+11118 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+11118 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+11119 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+11119 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setEmail
+11120 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property regDate
+11120 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+11120 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'regDate' renamed to 'regDate'
+11122 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property regDate to model
+11122 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+11122 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+11122 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+11123 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setRegDate
+11123 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Reading property modDate
+11124 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+11124 [main] DEBUG s.d.s.p.ObjectMapperBeanPropertyNamingStrategy - Name 'modDate' renamed to 'modDate'
+11125 [main] DEBUG s.d.s.p.OptimizedModelPropertiesProvider - Adding property modDate to model
+11125 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+11126 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+11126 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+11126 [main] DEBUG s.d.s.p.bean.BeanModelProperty - Evaluating unwrapped setter for member setModDate
+11127 [main] DEBUG s.d.schema.DefaultModelProvider - Inferred 6 properties. Properties found email, modDate, regDate, seq, userId, userNm
+11127 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Generated parameter model id: TestVO, name: TestVO, schema: {} models
+11128 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Adding a new model with key TestVO
+11129 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.lang.Object
+11132 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: object
+11133 [main] DEBUG s.d.s.r.o.VendorExtensionsReader - Extension count 1 for method insertTestUser
+11133 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:object
+11134 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method insertTestUser
+11136 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type V
+11136 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |transactionTestUser|
+11137 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding input parameter of type Lcom/lgcns/project/rest_server_test/rest/vo/TestVO;
+11137 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |transactionTestUser|
+11138 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |transactionTestUser|
+11138 [main] DEBUG s.d.schema.DefaultModelProvider - Skipping model of type V as its either a container type, map, enum or base type, or its already been handled
+11139 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for void
+11139 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Generated parameter model id: TestVO, name: TestVO, schema: {} models
+11141 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: null
+11141 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method transactionTestUser
+11142 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding return parameter of type Ljava/lang/Object;
+11143 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Reading parameters models for handlerMethod |updateTestUser|
+11143 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Adding input parameter of type Lcom/lgcns/project/rest_server_test/rest/vo/TestVO;
+11144 [main] DEBUG s.d.s.w.r.o.OperationModelsProvider - Finished reading parameters models for handlerMethod |updateTestUser|
+11144 [main] DEBUG s.d.s.r.o.SwaggerOperationModelsProvider - Reading parameters models for handlerMethod |updateTestUser|
+11145 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Generated parameter model id: TestVO, name: TestVO, schema: {} models
+11145 [main] DEBUG s.d.s.web.scanners.ApiModelReader - Did not find any parameter models for java.lang.Object
+11146 [main] DEBUG s.d.s.w.r.o.OperationResponseClassReader - Setting spring response class to: object
+11147 [main] DEBUG s.d.s.r.o.VendorExtensionsReader - Extension count 1 for method updateTestUser
+11147 [main] DEBUG s.d.s.r.o.SwaggerOperationResponseClassReader - Setting response class to:object
+11148 [main] DEBUG s.d.s.r.o.OperationAuthReader - Authorization count 0 for method updateTestUser
+11208 [main] INFO  c.l.p.r.RestServerTestApplication - Started RestServerTestApplication in 10.705 seconds (JVM running for 12.119)
+20572 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20572 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20574 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+20622 [http-nio-8081-exec-1] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping - looking up handler for path: /test/users
+20637 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+20637 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
+20638 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
+20688 [http-nio-8081-exec-1] INFO  c.l.p.r.r.a.TestCommonControllerAdvice - TestCommonControllerAdvice.exceptionHandler for MissingServletRequestParameterException.class
+20869 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+20870 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 400
+20871 [http-nio-8081-exec-1] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST
+53691 [http-nio-8081-exec-2] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping - looking up handler for path: /test/users
+53692 [http-nio-8081-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.preHandle ****************************
+53693 [http-nio-8081-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.status : 200
+53694 [http-nio-8081-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - preHandle.getDispatcherType = REQUEST
+53695 [http-nio-8081-exec-2] INFO  c.l.p.r.r.a.TestCommonControllerAdvice - TestCommonControllerAdvice.exceptionHandler for MissingServletRequestParameterException.class
+53698 [http-nio-8081-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - ******************** CommonInterceptor.afterCompletion ****************************
+53699 [http-nio-8081-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.status : 400
+53699 [http-nio-8081-exec-2] INFO  c.l.p.r.r.i.CommonInterceptor - afterCompletion.getDispatcherType = REQUEST

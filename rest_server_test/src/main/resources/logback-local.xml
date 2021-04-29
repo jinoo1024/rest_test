@@ -4,7 +4,7 @@
 
 <!-- 변수 지정 -->
     <property name="LOG_DIR" value="D:\work\dev\logs" />
-    <property name="LOG_FILE" value="local" />
+    <property name="LOG_FILE" value="local_rest_01" />
 
   	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
     	<encoder>
@@ -38,7 +38,7 @@
 		<appender-ref ref="FILE"/> 
 	</logger>
 	
-	<logger name="org.springframework.jdbc.datasource" level="debug" additivity="false"> <!-- additivity: root 상속여부(default:true) -->
+	<logger name="org.springframework.jdbc.datasource" level="info" additivity="false"> <!-- additivity: root 상속여부(default:true) -->
 		<appender-ref ref="STDOUT"/> 
 		<appender-ref ref="FILE"/> 
 	</logger>

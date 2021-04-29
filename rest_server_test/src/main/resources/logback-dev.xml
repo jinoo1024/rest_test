@@ -3,8 +3,8 @@
 <configuration>
 
 <!-- 변수 지정 -->
-    <property name="LOG_DIR" value="D:\work\dev\logs" />
-    <property name="LOG_FILE" value="local" />
+    <property name="LOG_DIR" value="/home/ubuntu/work/logs" />
+    <property name="LOG_FILE" value="local_rest_01" />
 
   	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
     	<encoder>

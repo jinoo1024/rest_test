@@ -1,4 +1,4 @@
-package com.lgcns.project.rest_server_test.rest.excpetion;
+package com.lgcns.project.rest_server_test.rest.exception;
 
 import lombok.Getter;
 

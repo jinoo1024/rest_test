@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lgcns.project.rest_server_test.rest.mapper.test.TestMapper">
+    
+    <resultMap id="testVOResultMap" type="TestVO">
+    	<result property="userId" column="user_id" />
+    	<result property="seq" column="seq" />
+    	<result property="userNm" column="user_nm" />
+    	<result property="email" column="email" />
+    	<result property="regDate" column="reg_date" />
+    	<result property="modDate" column="mod_date" />
+    </resultMap>
+    <select id="getTestUserInfo" parameterType="map" resultMap="testVOResultMap">
+    	select
+			a.user_id
+			,a.seq
+			,a.user_nm
+			,a.email
+			,a.reg_date
+			,a.mod_date
+		from user_test a 
+		where a.user_id = #{userId}		
+	</select>
+	
+	<select id="getTestAllInfo" parameterType="map" resultMap="testVOResultMap">
+    	select
+			a.user_id
+			,a.seq
+			,a.user_nm
+			,a.email
+			,a.reg_date
+			,a.mod_date
+		from user_test a
+		where 1=1
+		 
+		<if test="userNm != null and userNm != ''">
+			and a.user_nm like '%' || #{userNm} || '%'		
+		</if>
+	</select>
+	
+	<insert id="insertTestUser" parameterType="map">
+    
+	    insert into user_test
+	    (	
+	    	user_id
+			,seq
+			,user_nm
+			,email
+			,reg_date
+			,mod_date
+	    )
+	    values
+	    (
+	    	#{user.userId}
+			,#{user.seq}
+			,#{user.userNm}
+			,#{user.email}
+			,now()
+			,now()
+	    )
+	
+	</insert>
+	
+	<update id="updateTestUser" parameterType="map">
+    
+    	update user_test a set
+    		seq = #{user.seq}
+			,user_nm = #{user.userNm}
+			,email = #{user.email}
+			,reg_date = now()
+			,mod_date = now()
+	    where a.user_id = #{user.userId}
+	</update>
+
+</mapper>

@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: local
+    active: dev
     
 
 
@@ -10,10 +10,39 @@ spring:
   profiles: local
   
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
+    #url: jdbc:postgresql://localhost:5432/test
+    url: jdbc:p6spy:postgresql://localhost:5432/test
     username: postgres
-    password: \!wjdwlsdn80
-    driver-class-name: org.postgresql.Driver
+    password: "!wjdwlsdn80"
+    #driver-class-name: org.postgresql.Driver
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    
+    hikari:      maximum-pool-size: 10
+      auto-commit: true
+      connection-timeout: 30000 #30sec
+
+#https://www.baeldung.com/spring-boot-configure-tomcat
+server:
+  port: 8081
+  tomcat:
+    accesslog:      enabled: true
+      directory: D:\work\dev\logs
+      prefix: access_log_rest_test_01_
+      file-date-format: yyyy-MM-dd
+      suffix: .log
+    connection-timeout: 5s
+    threads:      max: 200
+     
+
+
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: true
+
+mybatis:
+  type-aliases-package: com.lgcns.project.rest_server_test.rest.vo
+  mapper-locations: mapper/**/*.xml  
 
 logging:
   config: classpath:logback-local.xml 
@@ -25,6 +54,44 @@ logging:
 spring:
   profiles: dev
 
+datasource:
+    #url: jdbc:postgresql://localhost:5432/test
+    url: jdbc:p6spy:postgresql://localhost:5432/test
+    username: postgres
+    password: "!wjdwlsdn80"
+    #driver-class-name: org.postgresql.Driver
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    
+    hikari:
+      maximum-pool-size: 10
+      auto-commit: true
+      connection-timeout: 30000 #30sec
+
+#https://www.baeldung.com/spring-boot-configure-tomcat
+server:
+  port: 8080
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: /home/ubuntu/work/logs
+      prefix: access_log_rest_test_01_
+      file-date-format: yyyy-MM-dd
+      suffix: .log
+    connection-timeout: 5s
+    threads:
+      max: 200
+     
+
+
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: true
+
+mybatis:
+  type-aliases-package: com.lgcns.project.rest_server_test.rest.vo
+  mapper-locations: mapper/**/*.xml
+  
 logging:
   config: classpath:logback-dev.xml 
 

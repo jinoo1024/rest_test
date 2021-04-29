@@ -1,41 +1,40 @@
 package com.lgcns.project.rest_server_test.rest.vo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class TestVO {
 
-	private String id;
-	private String name;
+	@JsonProperty("userId")
+	private String userId;
+
+	@JsonProperty("seq")
+	private int seq;
+	
+	@JsonProperty("userNm")
+	private String userNm;
+	
+	@JsonProperty("email")
 	private String email;
 	
-	public TestVO() {
-		super();
-	}
+	//@JsonIgnore
+	//@JsonInclude(JsonInclude.Include.NON_NULL)
+	@JsonProperty("regDate")
+	private String regDate;
 	
-	public TestVO(String id, String name, String email) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.email = email;
-	}
-
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	
-	
+	//@JsonIgnore
+	//@JsonInclude(JsonInclude.Include.NON_NULL)
+	@JsonProperty("modDate")
+	private String modDate;
 	
 }
